@@ -1,0 +1,6 @@
+1, 输入文件名需用全路径，如C:/path/to/file/New MSS Working Sheet.xlsx
+2, 输出的文件名：WeeklyView.xlsx 和程序在同一文件夹里。
+3, 整个格式如下：java -jar MonthtoWeek.jar [whole path] [sheet name] [year]
+如： java -jar MonthtoWeek.jar C:/path/to/file/New MSS Working Sheet.xlsx Consolidation 2016
+
+在运行前请先在系统里安装JRE（有就不用了）: http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html
