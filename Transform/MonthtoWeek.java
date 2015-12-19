@@ -82,18 +82,12 @@ public class MonthtoWeek {
 	public static void main(String[] args) throws IOException, EncryptedDocumentException, OpenXML4JException {
 		// TODO Auto-generated method stub
 		
-		//String filename = "/Users/zzc/Downloads/New MSS Working Sheet.xlsx";
-		//String sheetname = "Consolidation";
-		//yearcalendar = Integer.parseInt("2016");
-		//String outputfilename = "/Users/zzc/Downloads/WeeklyView.xlsx";
 		String filename = args[0]; 
 		String sheetname = args[1]; 
 		try{
 			yearcalendar = Integer.parseInt(args[2]);
 		}catch(Exception e){
 			e.printStackTrace();
-		}finally{
-			yearcalendar = 2016;
 		}
 		String outputfilename = "./WeeklyView.xlsx";
 		
@@ -390,11 +384,6 @@ public class MonthtoWeek {
 				if (r != null) {
 					Cell c = CellUtil.getCell(r, weekindex+j);
 					c.setCellType(Cell.CELL_TYPE_NUMERIC);
-				    //System.out.println("r's column: "+ ref.getCol());
-				    //if(c==null){
-				    //	System.out.println("cannot create cell.");
-				    //	return;
-				    //}	
 					CellStyle style = wb.createCellStyle();
 					Font font = wb.createFont();
 					font.setFontName("Calibri");
